@@ -25,7 +25,7 @@ myplot
 my
 
 d2
-
+ggplot(d2, aes(carat, price, color=color), geom_point()
 
 
 
@@ -33,6 +33,47 @@ myplot <-ggplot(data = d2 <- diamonds[sample(1:dim(diamonds)[1], 1000), ], color
 
 library(MASS)
 ggplot(birthwt, aes(factor(race), bwt)) + geom_boxplot()
+summary(myplot)
+
+Facets - subsetting data to make lattice plots
+ggplot(data = iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point() +
+facet_grid(. ~ Species)
+
+ggplot(data = iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point() +
+  + facet_grid(. ~ Species)
+ggplot(data = iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point() +
+  + facet_grid( ~ Species)
 
 
+ggplot(data = iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point() +
+  + facet_wrap( ~ Species)
+
+facet wrap vs facet grid (fills space)
+
+scales aes(color = variable)
+color = "black"
+#or add as scale
+scale_fill_manua(values = c("color1"))
+library(RColorBrewer)
+display.brewer.all
+
+library("reshape2")
+df  <- melt(iris, id.vars = "Species")
+ggplot(df, aes(Species, value, fill = variable)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_brewer(palette = "Set1")
+￼
+
+ggplot(df, aes(Species, value, fill = variable)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_brewer(palette = "Set1")
+#i want hue website
+
+
+￼
+
+
+
+
+  
 
