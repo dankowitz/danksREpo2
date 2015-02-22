@@ -1,0 +1,58 @@
+  469  ./setup\ git\ PATH\ for\ non-terminal\ programs.sh 
+  473  git
+  474  git --version
+  475  which git
+  488  cd git;ls
+  490  sudo ./bin/git
+  492  ./bin/git-shell
+  518  git
+  519  git config --global user.name "Ann Danowitz"
+  520  git config --global user.email "danowitz@email.arizona.edu"
+  521  git config --global user.color.ui "auto"
+  522  git config --global core.edutor "vi"
+  535  git status
+  537  git
+  538  git status
+  540  git init
+  542  git status
+  543  git add mars.txt
+  544  git status
+  545  git --help
+  546  gitcommit
+  547  git commit
+  548  git commit
+  549  git status
+  551  git log
+  552  git status
+  553  history | grep git
+  555  git status
+  556  git diff
+  557  git add
+  558  git add mars.txt
+  559  git status
+  560  git commit
+  561  git status
+  562  git commit
+  563  git log
+  565  ls ~/github
+  566  which github
+  567  which git
+  568  locate github
+  570  git commit -am
+  571  git commit -am First commit message
+  573  git commit -am First commit message
+  574  git commit -m First commit message
+  575  git add mars.txt
+  576  git commit -am First commit message
+  577  git commit -m First commit message
+  578  git commit -am First commit message
+  582  git clone git@github.com:naupaka
+  595  git add Sunday_scripts.zip 
+  596  git init
+  597  git add Sunday_scripts.zip 
+  598  git commit
+  599  git status
+  600  git remote add origin git@github.com:dankowitz/danksREpo2.git
+  601  git push -u origin master
+  602  history | grep git
+  603  history | grep git > git_history2_22.txt
